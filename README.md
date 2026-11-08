@@ -1,10 +1,8 @@
-# CampusCart : E-commerce Web Analytics
+# CampusCart — E-commerce Web Analytics
 
 CampusCart Web Analytics is an end-to-end Web Analytics project developed to understand user behaviour, engagement patterns, and purchasing activities on a student-oriented e-commerce website.
 
 The project combines website development, event tracking, data collection, behavioural analysis, statistical examination, and interactive dashboard development to study the complete online shopping journey.
-
-CampusCart provides a shopping environment featuring academic and everyday college essentials such as notebooks, stationery, calculators, headphones, planners, and USB drives. User interactions across the website are tracked and analysed to understand how visitors discover products, interact with the cart, proceed through checkout, and complete purchases.
 
 ## Objectives
 
@@ -20,169 +18,121 @@ CampusCart provides a shopping environment featuring academic and everyday colle
 ## Key Features
 
 ### 1. E-commerce Website
-
 - Developed a student-oriented e-commerce website using Python and Flask.
 - Includes academic and everyday college essentials.
 - Supports product browsing, cart operations, and checkout activities.
-- Deployed online using PythonAnywhere to collect website interaction data.
+- Deployed using PythonAnywhere.
 
 ### 2. Event Tracking and Data Collection
-
-- Integrated Google Tag Manager (GTM) to configure and manage tracking events.
+- Integrated Google Tag Manager (GTM) for event tracking.
 - Used Google Analytics 4 (GA4) to collect website interaction data.
-- Tracked activities including page views, product views, searches, category selection, add-to-cart actions, quantity changes, checkout initiation, and purchases.
-- Monitored user activity, sessions, engagement, and revenue.
+- Tracked page views, product views, searches, category selection, add-to-cart actions, checkout activities, and purchases.
 
 ### 3. Funnel Analysis
-
-- Examines the progression of users through four purchasing stages:
+- Examines four stages of the purchasing journey:
   - Product View
   - Add to Cart
   - Begin Checkout
   - Purchase
 - Evaluates stage-wise conversion rates and abandonment.
-- Supports device-level comparison of funnel progression.
 
 ### 4. User Segment Analysis
-
-- Examines behavioural segments such as Product Viewers, Purchasers, and Searchers.
+- Analyses Product Viewers, Purchasers, and Searchers.
 - Identifies overlaps between browsing and purchasing behaviour.
-- Helps understand differences between user groups.
 
-### 5. Path Exploration and Page Navigation
-
-- Uses GA4 Path Exploration to study user navigation sequences.
-- Examines how users move between website pages and events.
-- Identifies commonly visited pages and product navigation patterns.
+### 5. Path Exploration
+- Examines user navigation sequences and commonly visited pages.
+- Studies interactions across website pages and events.
 
 ### 6. Device Performance Analysis
-
 - Compares mobile and desktop user activity.
 - Examines product views and purchases across device categories.
 - Uses a contingency table and Chi-square test to investigate the association between device type and purchase outcome.
 
 ### 7. Interactive Analytics Dashboard
-
 - Developed using Google Looker Studio.
-- Presents key performance indicators through scorecards.
-- Includes a conversion funnel, user segment treemap, product view distribution, and device performance visualisations.
-- Consolidates major analytical findings into a unified dashboard.
+- Presents KPIs, conversion funnel, user segments, product distribution, and device performance visualisations.
 
 ## Analytical Methodology
 
-The project follows an end-to-end Web Analytics workflow consisting of the following stages:
-
-1. **Website Development:** Developed and deployed the CampusCart e-commerce website using Python, Flask, and PythonAnywhere.
-2. **Event Implementation:** Configured website interaction tracking through Google Tag Manager.
-3. **Data Collection:** Collected user interaction and behavioural data using Google Analytics 4.
-4. **Data Preparation:** Exported and organized GA4 data using Google Sheets for further analysis.
-5. **Data Analysis:** Used Python and Google Colab for data validation, derived metric calculation, product analysis, revenue analysis, and statistical examination.
+1. **Website Development:** Developed the CampusCart website using Python and Flask.
+2. **Event Implementation:** Configured interaction tracking using Google Tag Manager.
+3. **Data Collection:** Collected website activity through Google Analytics 4.
+4. **Data Preparation:** Organized and prepared exported analytics data using Google Sheets.
+5. **Data Analysis:** Used Python and Google Colab for data validation, metric calculations, and statistical analysis.
 6. **Behavioural Analysis:** Performed funnel exploration, user segmentation, and path exploration using GA4.
-7. **Dashboard Development:** Connected prepared datasets to Google Looker Studio and developed interactive visualisations.
-8. **Insight Generation:** Interpreted the analytical results to understand engagement, conversion, product performance, and device-level behaviour.
+7. **Dashboard Development:** Created interactive visualisations using Google Looker Studio.
+8. **Insight Generation:** Interpreted results to understand engagement, conversion, product performance, and device behaviour.
 
 ## Technology Stack
 
-- **Python** — Backend development and data analysis.
-- **Flask** — E-commerce website development.
-- **PythonAnywhere** — Website hosting and deployment.
-- **Google Tag Manager (GTM)** — Website event tracking implementation.
-- **Google Analytics 4 (GA4)** — Web analytics and behavioural analysis.
-- **Google Sheets** — Data organization and preparation.
-- **Google Colab** — Python-based data analysis and statistical examination.
-- **Pandas & NumPy** — Data manipulation and calculations.
-- **Matplotlib & Seaborn** — Statistical data visualization.
-- **SciPy** — Chi-square statistical testing.
-- **Google Looker Studio** — Interactive dashboard development.
-
-## Dataset
-
-The project uses website interaction data collected through Google Analytics 4 during the analysis period documented in the project report.
-
-The collected data includes information related to:
-
-- Users and sessions.
-- Page views and website events.
-- Product interactions.
-- Add-to-cart and checkout activities.
-- Purchases and revenue.
-- Device categories.
-- User segments and navigation paths.
-
-The exported GA4 data was organized and prepared for behavioural analysis, statistical calculations, and dashboard development.
+- Python
+- Flask
+- PythonAnywhere
+- Google Tag Manager (GTM)
+- Google Analytics 4 (GA4)
+- Google Sheets
+- Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SciPy
+- Google Looker Studio
 
 ## Results and Key Findings
 
 The analysis produced the following results for the observed dataset:
 
-| Metric | Recorded Value |
+| Metric | Value |
 |---|---:|
 | Active Users | 30 |
-| New Users | 30 |
 | Sessions | 42 |
 | Engaged Sessions | 32 |
 | Engagement Rate | 76.19% |
 | Average Engagement Time | 50 seconds |
 | Total Events | 1,100 |
-| Events per Session | 27 |
 | Product Viewers | 23 |
 | Purchasers | 15 |
 | Total Revenue | ₹4,947 |
 
 ### Conversion Funnel
 
-The purchasing journey recorded the following progression:
-
-| Funnel Stage | Users | Completion Rate |
+| Stage | Users | Completion Rate |
 |---|---:|---:|
 | Product View | 23 | 100% |
 | Add to Cart | 20 | 86.96% |
 | Begin Checkout | 19 | 95.00% |
 | Purchase | 15 | 78.95% |
 
-Overall, 65.22% of product viewers completed a purchase. The checkout-to-purchase transition showed the highest stage-wise drop-off.
+Overall, 65.22% of product viewers completed a purchase. The checkout-to-purchase transition recorded the highest stage-wise drop-off.
 
 ### Additional Findings
 
-- **Product Engagement:** Premium Notebook received the highest share of product views, followed by Pen Set and Scientific Calculator.
-- **User Segmentation:** The analysis identified 23 Product Viewers and 15 Purchasers, with 15 users appearing in both groups.
+- **Product Engagement:** Premium Notebook received the highest share of product views.
+- **User Segmentation:** 23 Product Viewers and 15 Purchasers were identified, with 15 users belonging to both groups.
 - **Device Analysis:** Mobile users accounted for 16 product viewers and 9 purchasers, while desktop users accounted for 7 product viewers and 6 purchasers.
-- **Statistical Analysis:** The Chi-square test did not identify a statistically significant association between device type and purchase outcome in the observed sample (p = 0.3738).
-
-These findings describe the collected dataset and should not be interpreted as representative of all e-commerce customers.
-
-## Business Impact
-
-CampusCart demonstrates how Web Analytics can help understand customer behaviour and evaluate e-commerce performance through measurable indicators.
-
-By combining event tracking, funnel analysis, user segmentation, and interactive visualization, the project provides a structured approach to examining customer engagement, identifying potential conversion bottlenecks, and understanding product and device-level behaviour.
+- **Statistical Analysis:** The Chi-square test did not identify a statistically significant association between device type and purchase outcome in the observed sample.
 
 ## Limitations
 
-- The analysis is based on a limited observation period and a relatively small user sample.
-- Behavioural findings may not generalize to larger or different customer populations.
-- Funnel analysis depends on the accuracy and consistency of event tracking.
+- Analysis is based on a limited observation period and a relatively small user sample.
+- Findings may not generalize to larger customer populations.
+- Funnel analysis depends on accurate and consistent event tracking.
 - Device-level statistical results require validation using a larger dataset.
-- Dashboard insights are dependent on the available GA4 data and its reporting configuration.
 
 ## Future Scope
 
-- Collect website interaction data over a longer period and from a larger user base.
+- Collect interaction data over a longer period and from a larger user base.
 - Introduce customer retention and cohort analysis.
 - Examine traffic sources and acquisition channels.
-- Expand product-level and customer segmentation analysis.
+- Expand customer segmentation and product-level analysis.
 - Explore predictive analytics for customer conversion and engagement.
 - Implement automated data refresh and reporting workflows.
 
 ## Live Dashboard
 
-Explore the interactive CampusCart Web Analytics dashboard:
-
-**[View CampusCart Dashboard — Google Looker Studio](https://datastudio.google.com/reporting/927eaf23-faad-4ce8-a7dd-3ca6c75b33c1)**
-
-## Project Documentation
-
-The detailed project report, including the methodology, analytical workflow, visualisations, and results, is available in the `report/` directory.
+**[Explore CampusCart — Google Looker Studio](https://datastudio.google.com/reporting/927eaf23-faad-4ce8-a7dd-3ca6c75b33c1)**
 
 ## Author
 
