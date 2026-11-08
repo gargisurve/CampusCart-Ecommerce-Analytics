@@ -1,18 +1,10 @@
-# CampusCart — End-to-End E-commerce Web Analytics
+# CampusCart : E-commerce Web Analytics
 
 CampusCart Web Analytics is an end-to-end Web Analytics project developed to understand user behaviour, engagement patterns, and purchasing activities on a student-oriented e-commerce website.
 
 The project combines website development, event tracking, data collection, behavioural analysis, statistical examination, and interactive dashboard development to study the complete online shopping journey.
 
 CampusCart provides a shopping environment featuring academic and everyday college essentials such as notebooks, stationery, calculators, headphones, planners, and USB drives. User interactions across the website are tracked and analysed to understand how visitors discover products, interact with the cart, proceed through checkout, and complete purchases.
-
-## Problem Statement
-
-E-commerce websites generate substantial amounts of interaction data through page visits, product views, searches, cart activities, and purchases. However, collecting this information alone does not provide a complete understanding of customer behaviour.
-
-Businesses need effective analytical approaches to identify engagement patterns, examine purchasing journeys, understand conversion rates, and recognize stages where users drop off.
-
-CampusCart addresses this through an integrated Web Analytics workflow that uses event tracking, behavioural analysis, statistical techniques, and data visualization to transform website interactions into meaningful insights.
 
 ## Objectives
 
